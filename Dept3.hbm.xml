@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+   <class name="com.pojo.Dept3" table="dept4" >
+      <id name="departmentNumber" type="int" column="deptno"> 
+       <!--   <column name="deptno"  /> -->
+         <generator class="increment"></generator>
+      </id>
+    <property name="departmentName" >
+    	<column name="dname"  length="20"/>
+    </property>
+    
+    <property name="departmentLocation" >
+    	<column name="loc"  length="20"/>
+    </property>
+    
+   </class>
+</hibernate-mapping>
