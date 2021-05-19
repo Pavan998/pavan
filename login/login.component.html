@@ -1,0 +1,89 @@
+<html>
+<head>
+<title> my bank</title>
+<style>
+.loginform{  
+		padding:10px;
+		float:center;
+		margin-top:10px;
+		border-radius:10px;}
+.loginheader{ 
+		background-color:red;
+		color:white;
+		padding:5px;
+		text-align:center;}
+.sub{
+		background-color:blue;
+		color:white;
+		padding:8px 20px 8px 20px;
+		border-radius:10px;}
+</style>
+</head>
+<body>
+<h1>Welcome  to icici bank </h1>
+<hr>
+<h2 class="loginheader"> Login </h2>
+<hr>
+<div class="loginform">
+<table align=center   >
+<tr><td>{{prompt1}}</td><td>  <input type=text [(ngModel)]="uname"> you have typed {{uname}}</td><tr>
+<tr><td>{{prompt2}} </td><td> <input type=password [(ngModel)]="upass">you have typed {{upass}}</td></tr>
+<tr><td colspan="2" align=center><input type=submit class="sub" name=submit value="login"><td></tr>
+</table>
+<table align=center border="3" >
+<tr><td>Forgot Password click </td><td><a href=forgot.html>here</a></td></tr>
+<tr><td>Reset Password click</td><td> <a href=password.html>here</a></td></tr>
+</table>
+</div>
+<div>
+	<span *ngIf="isLoggedIn; then condition1 else condition2"> </span>
+	<ng-template #condition1>user is logged-in</ng-template>
+	<ng-template #condition2>user is not logged-in</ng-template>
+</div>
+Loggedin Status <p>{{isLoggedIn}}</p>
+<button (click)="mySignInFunction()">Signin</button>
+<table border=5>
+	<tr *ngFor="let myDept of allDepts">
+		<td >
+			{{myDept}}
+		 </td>
+	</tr>
+</table>
+<table border=5>
+	<tr >
+		<td >			{{dept.departmentNumber}}		 </td>
+		 <td >			{{dept.departmentName}}		 </td>
+		 <td >			{{dept.departmentLocation}}		 </td>
+	</tr>
+</table>
+<table border=15>
+	<tr *ngFor="let myDept of deptAry">
+		<td >			{{myDept.departmentNumber}}		 </td>		 
+		<td >			{{myDept.departmentName}}		 </td>
+		 <td >			{{myDept.departmentLocation}}	 </td>
+		 <td >			<button > View Employee </button>	 </td>
+	<table border=10>
+	 <tr *ngFor="let myEmp of myDept.empSet"> 
+		<td >			{{myEmp.employeeNumber}}	 </td>
+		<td >			{{myEmp.employeeName}}	 </td>
+		<td >			{{myEmp.employeeJob}}	 </td>
+		<td >			{{myEmp.employeeManager}}	 </td>
+		<td >			{{myEmp.employeeHireDate}}	 </td>
+		<td >			{{myEmp.employeeSalary}}	 </td>
+		<td >			{{myEmp.employeeCommission}}	 </td>
+		<td >			<button > View Customer </button>	 </td>
+		<table border=5>
+			<tr *ngFor="let myCust of myEmp.custList"> 
+				<td >			{{myCust.customerid}}	 </td>
+				<td >			{{myCust.name}}	 </td>
+				<td >			{{myCust.city}}	 </td>
+				<td >			{{myCust.creditlimit}}	 </td>
+				<td >			<button > View Order </button>	 </td>
+			</tr>
+		</table>
+	</tr>
+</table>
+</tr>
+</table>
+</body>
+</html>
