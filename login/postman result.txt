@@ -1,0 +1,115 @@
+{
+    "departmentNumber": 30,
+    "departmentName": "SALES",
+    "departmentLocation": "CHICAGO",
+    "empSet": [
+        {
+            "employeeNumber": 7844,
+            "employeeName": "TURNER",
+            "employeeJob": "SALESMAN",
+            "employeeManager": 7698,
+            "employeeHiredate": "1981-09-08",
+            "employeeSalary": 1500.0,
+            "employeeCommission": 0.0,
+            "custList": [
+                {
+                    "customerid": 105,
+                    "name": "K + T SPORTS",
+                    "city": "SANTA CLARA",
+                    "creditlimit": 5000.0
+                },
+                {
+                    "customerid": 108,
+                    "name": "NORTH WOODS HEALTH AND FITNESS SUPPLY CENTER",
+                    "city": "HIBBING",
+                    "creditlimit": 8000.0
+                },
+                {
+                    "customerid": 100,
+                    "name": "JOCKSPORTS",
+                    "city": "BELMONT",
+                    "creditlimit": 5000.0
+                }
+            ]
+        },
+        {
+            "employeeNumber": 7521,
+            "employeeName": "WARD",
+            "employeeJob": "SALESMAN",
+            "employeeManager": 7698,
+            "employeeHiredate": "1981-02-22",
+            "employeeSalary": 1250.0,
+            "employeeCommission": 500.0,
+            "custList": [
+                {
+                    "customerid": 101,
+                    "name": "TKB SPORT SHOP",
+                    "city": "REDWOOD CITY",
+                    "creditlimit": 10000.0
+                },
+                {
+                    "customerid": 103,
+                    "name": "JUST TENNIS",
+                    "city": "BURLINGAME",
+                    "creditlimit": 3000.0
+                },
+                {
+                    "customerid": 106,
+                    "name": "SHAPE UP",
+                    "city": "PALO ALTO",
+                    "creditlimit": 6000.0
+                }
+            ]
+        },
+        {
+            "employeeNumber": 7499,
+            "employeeName": "ALLEN",
+            "employeeJob": "SALESMAN",
+            "employeeManager": 7698,
+            "employeeHiredate": "1981-02-20",
+            "employeeSalary": 1600.0,
+            "employeeCommission": 300.0,
+            "custList": [
+                {
+                    "customerid": 104,
+                    "name": "EVERY MOUNTAIN",
+                    "city": "CUPERTINO",
+                    "creditlimit": 10000.0
+                },
+                {
+                    "customerid": 107,
+                    "name": "WOMENS SPORTS",
+                    "city": "SUNNYVALE",
+                    "creditlimit": 10000.0
+                }
+            ]
+        },
+        {
+            "employeeNumber": 7698,
+            "employeeName": "BLAKE",
+            "employeeJob": "MANAGER",
+            "employeeManager": 7839,
+            "employeeHiredate": "1981-05-01",
+            "employeeSalary": 2850.0,
+            "employeeCommission": null,
+            "custList": []
+        },
+        {
+            "employeeNumber": 7654,
+            "employeeName": "MARTIN",
+            "employeeJob": "SALESMAN",
+            "employeeManager": 7698,
+            "employeeHiredate": "1981-09-28",
+            "employeeSalary": 1250.0,
+            "employeeCommission": 1400.0,
+            "custList": [
+                {
+                    "customerid": 102,
+                    "name": "VOLLYRITE",
+                    "city": "BURLINGAME",
+                    "creditlimit": 7000.0
+                }
+            ]
+        }
+    ]
+}
