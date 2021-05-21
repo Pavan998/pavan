@@ -30,4 +30,16 @@ addDepartmentService(dept: Department)  {
   return this.myHttp.post("http://localhost:8080/addDept",dept,{responseType:'text'});
    
 }
+
+
+modifyDepartmentService(dept: Department)  {
+  return this.myHttp.put("http://localhost:8080/modifyDept",dept,{responseType:'text'});
+   
+}
+
+deleteDepartmentService(dept: Department)  {
+  return this.myHttp.delete("http://localhost:8080/deleteDeptById/"+dept.departmentNumber,{responseType:'text'});
+
+   
+}
 }
