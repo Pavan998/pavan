@@ -9,6 +9,8 @@ import { Department, DepartmentDTO } from 'src/app/login/Department';
 })
 export class AddPayeeComponent implements OnInit {
 mydept:Department=new Department();
+mydept1:Department=new Department();
+mydept2:Department=new Department();
   constructor(private ccs:CurrencyConverterService) { }
 
   ngOnInit(): void {
@@ -31,7 +33,21 @@ mydept:Department=new Department();
   modifyDepartment(dept:Department){
     this.ccs.modifyDepartmentService(dept).subscribe((data)=>{
       if(data!=null){
-        alert("adding is successful");
+        alert("Modification successful");
+      }},
+      (err)=>{
+        alert("some thing went wrong");
+        console.log(err);
+      }
+    
+    )
+
+  }
+
+  deleteDepartment(dept:Department){
+    this.ccs.deleteDepartmentService(dept).subscribe((data)=>{
+      if(data!=null){
+        alert("Deleted successful");
       }},
       (err)=>{
         alert("some thing went wrong");
