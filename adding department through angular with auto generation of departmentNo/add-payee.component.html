@@ -1,5 +1,15 @@
-
+<h2 style="background-color: blueviolet;">Add Department</h2>
 <!-- enter deptno<input type=number [(ngModel)]="mydept.departmentNumber"><br> -->
 enter deptName<input type=text [(ngModel)]="mydept.departmentName"><br>
 enter deptLocation<input type=text [(ngModel)]="mydept.departmentLocation">
-<button (click)="addDepartment(mydept)">Add Department</button>
+<button (click)="addDepartment(mydept)">Add Department</button><br>
+<br>
+<h2 style="background-color: blueviolet;">Modify Department</h2>
+enter deptno<input type=number [(ngModel)]="mydept1.departmentNumber"><br> 
+enter deptName<input type=text [(ngModel)]="mydept1.departmentName"><br>
+enter deptLocation<input type=text [(ngModel)]="mydept1.departmentLocation">
+<button (click)="modifyDepartment(mydept)">Modify Department</button><br>
+<br>
+<h2 style="background-color: blueviolet;">Delete Department</h2>
+enter deptno<input type=number [(ngModel)]="mydept2.departmentNumber"><br> 
+<button (click)="deleteDepartment(mydept)">Delete Department</button><br>
